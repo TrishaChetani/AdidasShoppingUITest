@@ -9,6 +9,8 @@
 
 ## Test Scenario : Performing a newsletter subscription Hoeffner
 ## Test Cases in Gerkins Syntax :
+```
+Feature: Performing a newsletter subscription Hoeffner
 Background: Open the Hoeffner webpage and accept the cookies
 Given  I visit Hoeffner login page
 When   I accept the cookie setting pop-up
@@ -21,7 +23,7 @@ Then   I can see a confirmation message that my subscription is in progress
 Examples:
 | email                        |
 | agarwalatrisha1212@gmail.com |
-
+```
 
 ## 2.0 Setup
 ### Dev Setup nodejs and npm
@@ -55,7 +57,6 @@ services: ["chromedriver","docker"],
   },
   ```
 
-
 ### 2.2.  CHROME HEADLESS
 - In wdio.conf.js file add below code to make browser headless
 ```
@@ -63,8 +64,6 @@ services: ["chromedriver","docker"],
 				args: ['headless', 'disable-gpu'],
 			},
 ```
-
-
 
 ### 2.2. REPORTS
 - (`Spec Reporter`)[https://webdriver.io/docs/spec-reporter.html]
@@ -89,11 +88,8 @@ Use the below command to run the test
 └── wdio.conf.js
 ```
 
-
 # Continious Integration & Continious Deployment
-```
-Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD.
-```
+* Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD.
 
 # Video of Running Test
 ```https://streamable.com/t59jac```

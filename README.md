@@ -90,7 +90,7 @@ Use the below command to run the test
 ```
 
 
-#CI-CD
+# Continious Integration & Continious Deployment
 ```
 Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD.
 ```

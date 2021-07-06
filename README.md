@@ -75,7 +75,7 @@ Use the below command to run the test
 ```npm test```
 
 ### 2.4 Folder Structure
-
+```
 ├── README.md
 ├── features
 │             ├── emailSubscription.feature
@@ -87,7 +87,7 @@ Use the below command to run the test
 │             └── steps.js
 ├── package.json
 └── wdio.conf.js
-
+```
 
 # Video of Running Test
 ```https://streamable.com/t59jac```

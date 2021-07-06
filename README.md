@@ -1,11 +1,12 @@
-# Guide for using automation script in Hoeffner newsletter subscription
-- it will simulate user actions in web browser and check if function works as expected.
+# Guide for using test automation scripts to validate Hoeffner newsletter subscription
+- it will simulate user actions in web browser and check if functionality works as expected.
+
 
 ## Tech stacks
-
 - [`webdriver.io`](https://webdriver.io/)
 - Cucumber framework  
 - node,npm
+
 
 ## Test Scenario : Performing a newsletter subscription Hoeffner
 ## Test Cases in Gerkins Syntax :
@@ -24,6 +25,9 @@ Examples:
 | email                        |
 | agarwalatrisha1212@gmail.com |
 ```
+
+
+
 
 ## 2.0 Setup
 ### Dev Setup nodejs and npm
@@ -45,12 +49,16 @@ Use the below command to run the test
 ### 2.4. TEST REPORTS
 - (`Spec Reporter`)[https://webdriver.io/docs/spec-reporter.html]
 
+
+
+
 ## 3.0 AUTOMATION FRAMEWORK
 
 ### 3.1.  Run test using DOCKER
 - **NOTE**
   >Below code is not added in wdio.conf.js file, and added here to showcase. How the test can run using docker
-  
+ 
+ 
 - (`Docker Service`)[https://webdriver.io/docs/docs/wdio-docker-service.html]
 - ```npm install wdio-docker-service --save-dev```
 ```
@@ -74,14 +82,20 @@ services: ["chromedriver","docker"],
 ### 3.2.  CHROME HEADLESS
 - **NOTE**
   >Below code is not added in wdio.conf.js file, and added here to showcase. How the test can run using headless chrome.
-  
+ 
+ 
 - In wdio.conf.js file add below code to make browser headless
 ```
 "goog:chromeOptions": {args: ['headless', 'disable-gpu'] },
 ```
 
+
+
+
 ## 4.0 Continuous Integration & Continuous Deployment
-- ** Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD **
+- **Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD**
+
+
 
 
 ### 5.0 Folder Structure

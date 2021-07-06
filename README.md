@@ -35,8 +35,19 @@ brew install node
 * install all the dependenices
 -  ```npm install``` as to install all dependendies from package.json
 
+### 2.3. RUN TEST
+Use the below command to run the test
+```npm test```
 
-### 2.1.  Run test using DOCKER
+### 2.3.1 Video of Running Test
+```https://streamable.com/t59jac```
+
+### 2.4. TEST REPORTS
+- (`Spec Reporter`)[https://webdriver.io/docs/spec-reporter.html]
+
+## 3.0 AUTOMATION FRAMEWORK
+
+### 3.1.  Run test using DOCKER
 - **NOTE**
   >Below code is not added in wdio.conf.js file, and added here to showcase. How the test can run using docker
   
@@ -60,7 +71,7 @@ services: ["chromedriver","docker"],
   },
   ```
 
-### 2.2.  CHROME HEADLESS
+### 3.2.  CHROME HEADLESS
 - **NOTE**
   >Below code is not added in wdio.conf.js file, and added here to showcase. How the test can run using headless chrome.
   
@@ -69,22 +80,11 @@ services: ["chromedriver","docker"],
 "goog:chromeOptions": {args: ['headless', 'disable-gpu'] },
 ```
 
-### 2.2. TEST REPORTS
-- (`Spec Reporter`)[https://webdriver.io/docs/spec-reporter.html]
-
-### 2.3. RUN TEST
-Use the below command to run the test
-```npm test```
-
-### 2.3.1 Video of Running Test
-```https://streamable.com/t59jac```
+## 4.0 Continuous Integration & Continuous Deployment
+** Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD **
 
 
-## 3.0 Continious Integration & Continious Deployment
-* Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD.
-
-
-### 4.0 Folder Structure
+### 5.0 Folder Structure
 ```
 ├── README.md
 ├── features

@@ -81,7 +81,7 @@ services: ["chromedriver","docker"],
 ```
 
 ## 4.0 Continuous Integration & Continuous Deployment
-** Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD **
+- ** Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD **
 
 
 ### 5.0 Folder Structure

@@ -34,7 +34,7 @@ brew install node
   ```npm install``` as to install all dependendies from package.json
 
 
-### 2.1.  DOCKER
+### 2.1.  Run test using DOCKER
 - (`Docker Service`)[https://webdriver.io/docs/docs/wdio-docker-service.html]
 ```npm install wdio-docker-service --save-dev```
 ```
@@ -87,6 +87,12 @@ Use the below command to run the test
 │             └── steps.js
 ├── package.json
 └── wdio.conf.js
+```
+
+
+#CI-CD
+```
+Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD.
 ```
 
 # Video of Running Test

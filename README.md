@@ -37,7 +37,9 @@ brew install node
 
 
 ### 2.1.  Run test using DOCKER
-- NOTE: Below code is not added in wdio.conf.js file, and added here to showcase. How the test can run using docker
+- **NOTE**
+  >Below code is not added in wdio.conf.js file, and added here to showcase. How the test can run using docker
+  
 - (`Docker Service`)[https://webdriver.io/docs/docs/wdio-docker-service.html]
 - ```npm install wdio-docker-service --save-dev```
 ```
@@ -59,12 +61,12 @@ services: ["chromedriver","docker"],
   ```
 
 ### 2.2.  CHROME HEADLESS
-- NOTE: Below code is not added in wdio.conf.js file, and added here to showcase. How the test can run using headless chrome.
+- **NOTE**
+  >Below code is not added in wdio.conf.js file, and added here to showcase. How the test can run using headless chrome.
+  
 - In wdio.conf.js file add below code to make browser headless
 ```
-"goog:chromeOptions": {
-				args: ['headless', 'disable-gpu'],
-			},
+"goog:chromeOptions": {args: ['headless', 'disable-gpu'] },
 ```
 
 ### 2.2. TEST REPORTS

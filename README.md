@@ -33,12 +33,12 @@ brew update
 brew install node
 ```
 * install all the dependenices
-  ```npm install``` as to install all dependendies from package.json
+-  ```npm install``` as to install all dependendies from package.json
 
 
 ### 2.1.  Run test using DOCKER
 - (`Docker Service`)[https://webdriver.io/docs/docs/wdio-docker-service.html]
-```npm install wdio-docker-service --save-dev```
+- ```npm install wdio-docker-service --save-dev```
 ```
 services: ["chromedriver","docker"],
 	dockerLogs: './logs',
@@ -65,15 +65,22 @@ services: ["chromedriver","docker"],
 			},
 ```
 
-### 2.2. REPORTS
+### 2.2. TEST REPORTS
 - (`Spec Reporter`)[https://webdriver.io/docs/spec-reporter.html]
-
 
 ### 2.3. RUN TEST
 Use the below command to run the test
 ```npm test```
 
-### 2.4 Folder Structure
+### 2.3.1 Video of Running Test
+```https://streamable.com/t59jac```
+
+
+## 3.0 Continious Integration & Continious Deployment
+* Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD.
+
+
+### 4.0 Folder Structure
 ```
 ├── README.md
 ├── features
@@ -87,9 +94,3 @@ Use the below command to run the test
 ├── package.json
 └── wdio.conf.js
 ```
-
-# Continious Integration & Continious Deployment
-* Jenkinsfile written using groovy code, which enables the capability to run the automated test in CI-CD.
-
-# Video of Running Test
-```https://streamable.com/t59jac```

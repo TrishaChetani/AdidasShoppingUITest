@@ -1,4 +1,4 @@
-# Guide for using test automation scripts to validate Hoeffner newsletter subscription
+# Guide for using test automation scripts to validate shopping Adidas.co.uk
 - it will simulate user actions in web browser and check if functionality works as expected.
 
 

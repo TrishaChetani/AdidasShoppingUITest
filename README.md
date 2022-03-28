@@ -137,3 +137,4 @@ services: ["chromedriver","docker"],
 ### 6.0 Bugs
 - I am not able to run the test because the adidas website is blocking me. This is the reason I am not sure whether my test are properly working or not.
 - I wanted to optimize on certain locators but since I am unable to run the test even once, I gave up optimizing the locator.
+- the last two line in Gerkins file or given code challenge I was not able to do because for me without signin the website was asking me my Name, emaiil etc and later I was able to place the order then checking the information shared in the  test(I tried manually)

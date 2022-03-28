@@ -15,10 +15,7 @@ class SearchProductPage extends Page {
     }
 
 
-    async open() {
-        return super.open('');
-        browser.maximizeWindow();
-    }
+
 
 
     async clickFirstProduct() {

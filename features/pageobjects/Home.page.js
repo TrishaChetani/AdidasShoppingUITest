@@ -32,7 +32,6 @@ class HomePage extends Page {
         browser.maximizeWindow();
     }
 
-
     async clickCloseLocationPopUp() {
         await (await this.viewLocationPopUp).isDisplayed();
         await (await this.closeLocationPopUp).click();

@@ -20,5 +20,4 @@ const pages = {
 
 When(/^Click on the first product$/, async () => {
     await SearchProductPage.clickFirstProduct();
-
 });

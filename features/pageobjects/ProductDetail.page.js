@@ -42,10 +42,10 @@ class ProductDetailPage extends Page {
         await (await this.size).click();
     }
 
-      async clickAddToBagButton() {
+    async clickAddToBagButton() {
             await (await this.addToBagButton).isDisplayed();
             await (await this.addToBagButton).click();
-        }
+    }
 
     async verifySuccessfulMessagePopUp(){
             await (await this.successfulMessagePopUp).isDisplayed();

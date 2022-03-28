@@ -16,9 +16,7 @@ let data = JSON.parse(file);
 
 
 const pages = {
-
     DeliveryPage: DeliveryPage
-
 }
 
 Then(/^Verify that youre on the delivery page$/, async () => {
@@ -28,8 +26,6 @@ Then(/^Verify that youre on the delivery page$/, async () => {
 Then(/^Navigate to from the Get Your Order module and click From A Collection Point$/, async () => {
     await DeliveryPage.clickOnCollectButton();
 });
-
-
 
 Then(/^Type London in the location text box$/, async () => {
     await DeliveryPage.keyInPickUpPoint(data.Location);

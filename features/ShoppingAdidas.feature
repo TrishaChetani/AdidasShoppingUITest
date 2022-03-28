@@ -1,4 +1,4 @@
-Feature: Buying from Adidas UK platform
+Feature: Place an Order using Adidas UK platform
 
   Scenario: Place an order from Adidas
   Given Navigate to adidas homepage and Search the word running

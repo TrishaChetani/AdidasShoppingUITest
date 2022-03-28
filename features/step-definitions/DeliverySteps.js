@@ -13,13 +13,10 @@ var path = require("path");
 const testFolder = "./testdata";
 const file = fs.readFileSync(path.resolve(testFolder, "testdata.json"));
 let data = JSON.parse(file);
-console.log(data)
+
 
 const pages = {
-    home: HomePage,
-    SearchProduct: SearchProductPage,
-    Detail: DetailPage,
-    CheckoutPage: CheckoutPage,
+
     DeliveryPage: DeliveryPage
 
 }

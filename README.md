@@ -11,19 +11,24 @@
 ## Test Scenario : Performing a newsletter subscription Hoeffner
 ## Test Cases in Gerkins Syntax :
 ```
-Feature: Performing a newsletter subscription Hoeffner
-Background: Open the Hoeffner webpage and accept the cookies
-Given  I visit Hoeffner login page
-When   I accept the cookie setting pop-up
+Feature: Buying from Adidas UK platform
 
-Scenario Outline: As a user, I can perform a newsletter subscription in Hoeffner login webpage
-Given  I can see the newsletter subscription input field
-When   I enter my "<email>" in the input field
-When   I press the Absenden button
-Then   I can see a confirmation message that my subscription is in progress
-Examples:
-| email                        |
-| agarwalatrisha1212@gmail.com |
+  Given Search for the word "running" and from the opened page
+  When click on the first product
+  When Verify that you have navigated to the correct product page by checking the URL
+  When Pick any size and click on "Add to Bag" button
+  When Verify that you have successfully added one item to the bag
+  When Click on "View Bag" button and navigate to the cart page
+  When Verify that you are on the cart page by the title "Your Bag"
+  Then click on the Checkout button
+  Then Verify that you're on the delivery page
+  Then from the "Get Your Order" module, click "From A Collection Point"
+  Then type "London" in the location text box
+  Then click "Search for Collection Points" button
+  Then from the list, pick any collection point
+  Then Verify that correct collection point is selected
+  Then Proceed to the payment step by “Review and Pay” Button
+  Then Verify that major payment methods “PayPal” and “Credit Card” are present
 ```
 
 
@@ -44,7 +49,7 @@ Use the below command to run the test
 ```npm test```
 
 ### 2.3.1 Video of Running Test
-```https://streamable.com/t59jac```
+
 
 ### 2.4. TEST REPORTS
 - (`Spec Reporter`)[https://webdriver.io/docs/spec-reporter.html]
@@ -100,15 +105,35 @@ services: ["chromedriver","docker"],
 
 ### 5.0 Folder Structure
 ```
+.
+├── Jenkinsfile
 ├── README.md
 ├── features
-│             ├── emailSubscription.feature
-│             ├── pageobjects
-│             │             ├── emailSubscription.page.js
-│             │             ├── page.js
-│             │             └── secure.page.js
-│             └── step-definitions
-│             └── steps.js
+│         ├── ShoppingAdidas.feature
+│         ├── pageobjects
+│   │   ├── addToCart.page.js
+│   │   ├── delivery.page.js
+│   │   ├── home.page.js
+│   │   ├── page.js
+│   │   ├── productDetail.page.js
+│   │   ├── searchProduct.page.js
+│   │   └── secure.page.js
+│   └── step-definitions
+│       ├── AddToCartSteps.js
+│       ├── DeliverySteps.js
+│       ├── HomeSteps.js
+│       ├── ProductDetailSteps.js
+│       └── SearchProductSteps.js
 ├── package.json
+├── testdata
+│   └── testdata.json
 └── wdio.conf.js
+
+4 directories, 18 files
+
 ```
+
+
+### 6.0 Bugs
+- I am not able to run the test because the adidas website is blocking me. This is the reason I am not sure whether my test are properly working or not.
+- I wanted to optimize on certain locators but since I am unable to run the test even once, I gave up optimizing the locator.

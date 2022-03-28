@@ -8,7 +8,7 @@ pipeline {
         stage(CleanCheckout) {
             steps {
                 cleanWs();
-                git 'https://github.com/TrishaChetani/CucumberWebdriverIO.git'
+                git 'https://github.com/TrishaChetani/AdidasShoppingUITest.git'
             }
         }
         stage(RunTest) {
